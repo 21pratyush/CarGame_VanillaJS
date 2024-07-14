@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.carGame {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #000033, #000011);
+  /* Cyberpunk background */
+}
+
+.instruction {
+  transform: translate(860px, -400px);
+  height: 480px;
+  width: 460px;
+}
+
+.car,
+.enemycar {
+  width: 50px;
+  height: 100px;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 100px;
+  background-image: url("../images/carimg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.car {
+  opacity: 1;
+}
+
+.gameArea {
+  width: 400px;
+  height: 100%;
+  background-color: transparent;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  margin: auto;
+  margin-top: -4.6%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.roadline {
+  width: 10px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  margin-left: 195px;
+}
+
+.Score {
+  position: fixed;
+  background-color: white;
+  margin-left: .8%;
+  margin-top: 1.5%;
+  padding: .5%;
+}
+
+#power {
+  position: relative;
+  margin-left: 70%;
+  transform: translateY(20px);
+  background-color: red;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 60%;
+  border-color: transparent;
+}
+
+#power img {
+  height: 80%;
+  width: 80%;
+  transform: translateY(5.5%);
+}
+
+.startScreen {
+  position: absolute;
+  background-color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  text-align: center;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  margin: auto;
+  width: 50%;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 5;
+  font-size: 20px;
+  word-spacing: 3;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+
+
+#loginButton {
+  display: block;
+  right: 2%;
+  top: 3%;
+  position: fixed;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+#logoutButton {
+  position: fixed;
+  right: 2%;
+  top: 3%;
+  display: none;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+
+#leaderBoardButton {
+  height: 70px;
+  width: 50px;
+  transform: translate(20px, -80px);
+  transition: all .2s ease;
+  &:hover {
+    height: 80px;
+    width: 60px;
+    transform: translate(15px, -90px);
+    cursor: pointer;
+  }
+}

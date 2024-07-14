@@ -1,0 +1,88 @@
+:root {
+    --background-color: #121212;
+    --text-color: #E0E0E0;
+    --table-bg-color: #1E1E1E;
+    --table-border-color: #333;
+    --table-alt-row-color: #2A2A2A;
+    --button-bg-color: #333;
+    --button-disabled-bg-color: #555;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+    --border-radius: 2%;
+    --padding: 12px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1{
+    margin-left: 5%;
+}
+.leaderboard-container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--box-shadow-color);
+    background-color: var(--table-bg-color);
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    padding: var(--padding);
+    text-align: left;
+    border-bottom: 1px solid var(--table-border-color);
+}
+
+.leaderboard-table th {
+    background-color: var(--table-border-color);
+    color: var(--text-color);
+}
+
+.leaderboard-table tr:nth-child(even) {
+    background-color: var(--table-alt-row-color);
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+}
+
+.pagination-button:disabled {
+    background-color: var(--button-disabled-bg-color);
+    cursor: not-allowed;
+}
+
+
+/* Transition for fade-in effect */
+.fade-enter {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-enter-active {
+    opacity: 1;
+}

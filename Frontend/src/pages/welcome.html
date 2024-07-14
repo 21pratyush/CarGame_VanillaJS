@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome-Page</title>
+    <link rel="stylesheet" href="../assets/styles/welcome.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx">
+          <img src="https://img.freepik.com/premium-vector/login-form-smartphone-online-registration_7087-1693.jpg" alt="Sign In Image" />
+        </div>
+        <div class="formBx">
+          <form id="loginForm">
+            <h2>Sign In</h2>
+            <input type="text" id="loginUsername" placeholder="Username" required />
+            <input type="password" id="loginPassword" placeholder="Password" required />
+            <input type="submit" value="Login" />
+            <p class="signup">
+              Don't have an account?
+              <a href="#" onclick="toggleForm();">Sign Up.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form id="registerForm">
+            <h2>Create an account</h2>
+            <input type="text" id="registerUsername" placeholder="Username" required />
+            <input type="email" id="registerEmail" placeholder="Email Address" required />
+            <input type="password" id="registerPassword" placeholder="Create Password" required />
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+            <input type="submit" value="Sign Up" />
+            <p class="signup">
+              Already have an account?
+              <a href="#" onclick="toggleForm();">Sign in.</a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx">
+          <img src="https://static.vecteezy.com/system/resources/previews/003/689/231/non_2x/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg" alt="Sign Up Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+    <script src="../assets/js/welcome.js"></script>
+    <script src="../../api/auth.js"></script>
+  </body>
+</html>
