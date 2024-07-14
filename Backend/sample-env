@@ -1,0 +1,9 @@
+PORT = 3000
+CORS_ORIGIN = *
+MONGO_URI = "mongodb+srv://username:password@cluster-name.rvixu74.mongodb.net"
+ACCESS_TOKEN = 0TU-sample-TOKEN
+ACCESS_TOKEN_EXPIRY = 1d
+ACCESS_TOKEN_SECRET = sample-access-secret
+REFRESH_TOKEN_EXPIRY = 10d
+REFRESH_TOKEN_SECRET = sample-refresh-secret
+

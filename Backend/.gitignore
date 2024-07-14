@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+# Environment variables file
+.env
+
+# Ignore package-lock.json if npm version is < 5.0
+package-lock.json
+
